@@ -18,5 +18,5 @@ app.use("/test", express.static('assets'));
 
 ravenController(app); //визиваем контроллер в другом файлу под таким же названием
 
-app.listen(8080); // Запускаем наш сервак на порте 3к.
+app.listen(8080,"raventest.raventest.svc"); // Запускаем наш сервак на порте 3к.
 console.log('Listening on 3000.'); //просто лог в консольку, ничего странного.
