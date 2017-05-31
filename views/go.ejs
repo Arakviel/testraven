@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Тест Равена</title>
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <script
+  src="https://code.jquery.com/jquery-1.12.4.js"
+  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+  crossorigin="anonymous"></script>
+  <style>
+    #a1{
+      width: 150px;
+      height: 100px;
+      background: url(/Raven/a<%=count%>/a1.png) no-repeat center;
+    }
+    #a2{
+      width: 150px;
+      height: 100px;
+      background: url(/Raven/a<%=count%>/a2.png) no-repeat center;
+    }
+    #a3{
+      width: 150px;
+      height: 100px;
+      background: url(/Raven/a<%=count%>/a3.png) no-repeat center;
+    }
+    #a4{
+      width: 150px;
+      height: 100px;
+      background: url(/Raven/a<%=count%>/a4.png) no-repeat center;
+    }
+    #a5{
+      width: 150px;
+      height: 100px;
+      background: url(/Raven/a<%=count%>/a5.png) no-repeat center;
+    }
+    #a6{
+      width: 150px;
+      height: 100px;
+      background: url(/Raven/a<%=count%>/a6.png) no-repeat center;
+    }
+  </style>
+  <link rel="stylesheet" href="/test.css" type="text/css">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/demo.css" />
+  <link rel="stylesheet" type="text/css" href="css/component.css" />
+  <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800|Clicker+Script' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <div class="demo-2">
+    <div id="large-header" class="large-header">
+      <canvas id="demo-canvas"></canvas>
+      <div class="col-lg-6 col-lg-offset-3 text-center test1">
+        <div class="alert alert-info">
+          <a href="/" class="btn btn-info">На головну</a>
+          <p><span class="label label-info"><%=data.name%> на питанні:<%= count %>/60</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-lg-offset-3 test2">
+      <img src="<%= picture %>" class="img-thumbnail"/>
+    </div>
+    <div class="col-lg-10 text-center test3">
+      <br>
+      <div class="alert alert-info text-center">
+        <p><span class="label label-info">Виберіть правильний:</span></p>
+        <br>
+        <form class="" method="post" action="/test/go">
+
+          <ul class="list-inline">
+            <li class="list-group-item"><button id="a1" class="list-group-item list-group-item-action" name="a" value="1"></button></li>
+            <li class="list-group-item"><button id="a2" class="list-group-item list-group-item-action" name="a" value="2"></button></li>
+            <li class="list-group-item"><button id="a3" class="list-group-item list-group-item-action" name="a" value="3"></button></li>
+            <li class="list-group-item"><button id="a4" class="list-group-item list-group-item-action" name="a" value="4"></button></li>
+            <li class="list-group-item"><button id="a5" class="list-group-item list-group-item-action" name="a" value="5"></button></li>
+            <li class="list-group-item"><button id="a6" class="list-group-item list-group-item-action" name="a" value="6"></button></li>
+          </ul>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/rAF.js"></script>
+  <script src="js/demo-2.js"></script>
+</body>
+</html>

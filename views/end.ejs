@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Результат</title>
+  <link rel="stylesheet" href="/end.css" type="text/css">
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+  <br><br>
+    <div class="row">
+      <div class="col-lg-4 col-lg-offset-4 text-center">
+        <div class="alert alert-info">
+          <a href="/" class="btn btn-info">На головну</a>
+          <h1><span class="label label-info"><%=data.name%></span>, ваш результат: <%=points%>/60</h1>
+          <p>Результат у відсотках: <%=iq%>%</p>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <div class="col-lg-10 col-lg-offset-1">
+      <table class="table table-striped text-center">
+        <th class="text-center">Полученный результат</th>
+        <th class="text-center">Степень</th>
+        <th class="text-center">Итог</th>
+        <tr>
+          <td>95% и больше</td> <td>1 степень</td> <td>Особо высокорaзвитый интеллект испытуемого</td>
+        </tr>
+        <tr>
+          <td>75-94%</td> <td>2 степень</td> <td>Незаурядный интеллект испытуемого</td>
+        </tr>
+        <tr>
+          <td>25-74%</td> <td>3 степень</td> <td>Средний интеллект испытуемого</td>
+        </tr>
+        <tr>
+          <td>6-24%</td> <td>4 степень</td> <td>Интеллект испытуемого ниже среднего</td>
+        </tr>
+        <tr>
+          <td>5% и меньше</td> <td>5 степень</td> <td>Дефектная интеллектуальная способность испытуемого</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

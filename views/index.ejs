@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Тест Равена</title>
+  <link rel="stylesheet" href="index.css" type="text/css">
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/demo.css" />
+  <link rel="stylesheet" type="text/css" href="css/component.css" />
+  <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800|Clicker+Script' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <div class="demo-2">
+    <div id="large-header" class="large-header">
+      <canvas id="demo-canvas"></canvas>
+      <h1><span class="label label-info">Прогресивні матриці Дж. Равена</span></h1>
+      <br><br>
+
+      <div class="col-lg-3 test1">
+        <img src="Ravens-matrices-SPM-cover.jpg" class="img-thumbnail" alt="Прогресивні матриці Дж. Равена">
+      </div>
+      <div class="col-lg-7 test2">
+        <div class="alert alert-info">
+          <p><strong>Тест Равена</strong> - это разработанная в 1936 году Джоном Равеном шкала прогрессивных матриц в соавторстве с Роджером Пенроузом для оценки уровня iq, коэффициента интеллекта и уровня умственных способностей, а также логичности мышления. Данный тест может дать оценку iq тестируемым независимо от уровня образования, социального сословия и рода деятельности. Тест был разработан в двух вариантах для детей и взрослых от 14 до 65 лет.</p>
+          <p>В тест Равена входит 60 таблиц, которые делятся на 5 серий по 12 заданий на каждую. Задания предлагаются с нарастающей сложностью.</p>
+
+
+          <form class="login" method="post" action="/test">
+            <div class="form-inline">
+              <label for="login-txt">Логін:</label>
+              <input type="text" id="login-txt" class="form-control mb-2 mr-sm-2 mb-sm-0" name="name" value="" placeholder="Введіть логін..." required>
+              <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                <button class="btn btn-info" type="submit">Розпочати тест</button>
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/rAF.js"></script>
+  <script src="js/demo-2.js"></script>
+</body>
+</html>

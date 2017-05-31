@@ -1,0 +1,26 @@
+h1 {
+	position: absolute;
+  margin: 0;
+  padding: 0;
+  color: #f9f1e9;
+  text-align: center;
+  top: 5px;
+  left: 50%;
+  -webkit-transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%,-50%,0);
+}
+
+div .test1{
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 65px;
+  left: 70px;
+}
+div .test2{
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 65px;
+  left: 385px;
+}
